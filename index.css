@@ -179,35 +179,35 @@ h3 {
 }
 
 .layer-bg {
-  background-image: url("/assets/images/parallax_0003_base.png");
+  background-image: url(assets/images/parallax_0003_base.png);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
 }
 
 .layer-01 {
-  background-image: url("/assets/images/header_0008_stars.png");
+  background-image: url(assets/images/header_0008_stars.png);
 }
 
 .layer-02 {
-  background-image: url("/assets/images/header_0002_planet-orange.png");
+  background-image: url(assets/images/header_0002_planet-orange.png);
 }
 .layer-03 {
-  background-image: url("/assets/images/header_0003_plenet-pink.png");
+  background-image: url(assets/images/header_0003_plenet-pink.png);
 }
 .layer-04 {
-  background-image: url("/assets/images/header_0004_planet-green.png");
+  background-image: url(assets/images/header_0004_planet-green.png);
 }
 .layer-05 {
-  background-image: url("/assets/images/header_0005_ship.png");
+  background-image: url(assets/images/header_0005_ship.png);
   background-position: center top;
 }
 .layer-06 {
-  background-image: url("/assets/images/header_0006_planet-front.png");
+  background-image: url(assets/images/header_0006_planet-front.png);
 }
 
 .layer-07 {
-  background-image: url("/assets/images/header_0007_robot.png");
+  background-image: url(assets/images/header_0007_robot.png);
 }
 @media (max-width: 425px) {
   .layer {

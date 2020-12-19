@@ -1,0 +1,252 @@
+body {
+  font-family: Lato, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-size: 19px;
+}
+h1 {
+  font-size: 35px;
+  line-height: 45px;
+  color: #114bfd;
+  margin-bottom: 5vh;
+  /* font-family: Fantasque; */
+  font-weight: 400;
+}
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+  color: #ff045b;
+  font-family: Fantasque;
+}
+
+.half {
+  height: 50vh;
+}
+.banner {
+  padding: 60px 48px 48px 48px;
+
+  /* min-height: 50vh; */
+  margin-top: 70px;
+}
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: #114bfd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+button:hover {
+  background-color: #313131;
+  color: white;
+}
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .web {
+    display: none;
+  }
+}
+#overview h2 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+#overview {
+  background-color: white;
+}
+.learn-more-button {
+  margin: 32px 0;
+}
+
+#banner-button {
+  background-color: white;
+  color: #313131;
+  font-size: 28px;
+  font-weight: bolder;
+  padding: 8px 32px;
+  width: 100%;
+  margin-top: 16px;
+  height: auto;
+  /* -webkit-box-shadow: 1px 3px 6px -1px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 1px 3px 6px -1px rgba(0, 0, 0, 0.48);
+  box-shadow: 1px 3px 6px -1px rgba(0, 0, 0, 0.48); */
+}
+
+#banner-button:hover {
+  background-color: #ff045b;
+  color: white;
+}
+#involved {
+  background-color: white;
+}
+#involved img {
+  max-width: 50%;
+}
+.space-container {
+  height: 150px;
+}
+#footer {
+  background-color: #313131;
+}
+
+.logo {
+  max-width: 300px;
+}
+h3 {
+  color: white;
+  font-size: 19px;
+  margin-top: 2vh;
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.541);
+  text-decoration: none;
+  cursor: pointer;
+}
+#footer a:hover {
+  color: #00fda3;
+}
+
+#footer p {
+  font-size: 14px;
+  color: white;
+  margin-top: 24px;
+}
+#footer button {
+  margin-top: 2vh;
+  background-color: rgba(255, 255, 255, 0.418);
+}
+
+.flip img {
+  transform: scaleX(-1);
+}
+
+#footer button:hover {
+  background-color: #00fda3;
+  color: #313131;
+}
+@font-face {
+  font-family: Fantasque;
+  font-weight: bold;
+  src: url(assets/fonts/fantasquesansmono-bold-webfont.woff);
+}
+@font-face {
+  font-family: Fantasque;
+  font-weight: normal;
+  src: url(assets/fonts/fantasquesansmono-regular-webfont.woff);
+}
+
+.nav {
+  background-color: #313131;
+  padding: 8px;
+}
+.navbar-brand img {
+  height: 50px;
+}
+.nav .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #00fda3;
+}
+.current {
+  color: #00fda3;
+}
+#hero {
+  overflow: hidden;
+  position: relative;
+  min-height: 50vh;
+  margin-top: 60px;
+  padding-bottom: 32px;
+}
+
+.layer {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  z-index: -1;
+  position: fixed;
+}
+
+.layer-bg {
+  background-image: url("/assets/images/parallax_0003_base.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.layer-01 {
+  background-image: url("/assets/images/header_0008_stars.png");
+}
+
+.layer-02 {
+  background-image: url("/assets/images/header_0002_planet-orange.png");
+}
+.layer-03 {
+  background-image: url("/assets/images/header_0003_plenet-pink.png");
+}
+.layer-04 {
+  background-image: url("/assets/images/header_0004_planet-green.png");
+}
+.layer-05 {
+  background-image: url("/assets/images/header_0005_ship.png");
+  background-position: center top;
+}
+.layer-06 {
+  background-image: url("/assets/images/header_0006_planet-front.png");
+}
+
+.layer-07 {
+  background-image: url("/assets/images/header_0007_robot.png");
+}
+@media (max-width: 425px) {
+  .layer {
+    background-size: 250%;
+    background-position: bottom left;
+  }
+  .layer-bg {
+    background-size: cover;
+  }
+  .layer-01 {
+    size: 100%;
+    background-position: right;
+  }
+  .layer-06 {
+    background-position: bottom center;
+  }
+  .layer-05 {
+    background-position: top center;
+    background-size: 100%;
+  }
+}
+@media (min-device-width: 426px) and (max-width: 768px) {
+  .layer {
+    background-size: 150%;
+  }
+  .layer-bg,
+  .layer-01 {
+    background-size: cover;
+  }
+  .layer-06 {
+    background-position: bottom center;
+  }
+}
+
+#overview,
+#involved,
+#footer {
+  padding-top: 10vh;
+}
+#involved {
+  padding-bottom: 10vh;
+}

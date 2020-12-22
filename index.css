@@ -1,252 +1,360 @@
+@font-face {
+	font-family: Fantasque;
+	font-weight: bold;
+	src: url(assets/fonts/fantasquesansmono-bold-webfont.woff);
+}
+@font-face {
+	font-family: Fantasque;
+	font-weight: normal;
+	src: url(assets/fonts/fantasquesansmono-regular-webfont.woff);
+}
+/* General CSS prep */
 body {
-  font-family: Lato, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
-  font-size: 19px;
-}
-h1 {
-  font-size: 35px;
-  line-height: 45px;
-  color: #114bfd;
-  margin-bottom: 5vh;
-  /* font-family: Fantasque; */
-  font-weight: 400;
-}
-h2 {
-  font-size: 28px;
-  line-height: 32px;
-  color: #ff045b;
-  font-family: Fantasque;
-}
-
-.half {
-  height: 50vh;
-}
-.banner {
-  padding: 60px 48px 48px 48px;
-
-  /* min-height: 50vh; */
-  margin-top: 70px;
+	font-family: Lato, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 19px;
 }
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
-
-button {
-  background-color: #114bfd;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 16px 32px;
+h1 {
+	font-size: 35px;
+	line-height: 45px;
+	color: #114bfd;
+	margin-bottom: 5vh;
+	font-weight: 400;
 }
-
-button:hover {
-  background-color: #313131;
-  color: white;
-}
-@media (min-width: 768px) {
-  .mobile {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .web {
-    display: none;
-  }
-}
-#overview h2 {
-  margin-top: 32px;
-  margin-bottom: 16px;
-}
-#overview {
-  background-color: white;
-}
-.learn-more-button {
-  margin: 32px 0;
-}
-
-#banner-button {
-  background-color: white;
-  color: #313131;
-  font-size: 28px;
-  font-weight: bolder;
-  padding: 8px 32px;
-  width: 100%;
-  margin-top: 16px;
-  height: auto;
-  /* -webkit-box-shadow: 1px 3px 6px -1px rgba(0, 0, 0, 0.48);
-  -moz-box-shadow: 1px 3px 6px -1px rgba(0, 0, 0, 0.48);
-  box-shadow: 1px 3px 6px -1px rgba(0, 0, 0, 0.48); */
-}
-
-#banner-button:hover {
-  background-color: #ff045b;
-  color: white;
-}
-#involved {
-  background-color: white;
-}
-#involved img {
-  max-width: 50%;
-}
-.space-container {
-  height: 150px;
-}
-#footer {
-  background-color: #313131;
-}
-
-.logo {
-  max-width: 300px;
+h2 {
+	font-size: 28px;
+	line-height: 32px;
+	color: #ff045b;
+	font-family: Fantasque;
 }
 h3 {
-  color: white;
-  font-size: 19px;
-  margin-top: 2vh;
+	color: white;
+	font-size: 19px;
+	margin-top: 2vh;
+}
+h4 {
+	font-family: Fantasque;
+	font-size: 48px;
+	color: white;
+}
+h5,
+.h5 {
+	font-style: italic;
+	font-size: 28px;
+	line-height: 32px;
 }
 
-#footer a {
-  color: rgba(255, 255, 255, 0.541);
-  text-decoration: none;
-  cursor: pointer;
+.space-container {
+	height: 150px;
 }
-#footer a:hover {
-  color: #00fda3;
+.page-section {
+	padding: 10vh 0;
 }
 
-#footer p {
-  font-size: 14px;
-  color: white;
-  margin-top: 24px;
+/* .banner {
+	padding: 60px 48px 48px 48px;
+	margin-top: 70px;
+} */
+
+button {
+	background-color: #114bfd;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 16px 32px;
 }
-#footer button {
-  margin-top: 2vh;
-  background-color: rgba(255, 255, 255, 0.418);
+button:hover {
+	background-color: #313131;
+	color: white;
+}
+.logo {
+	max-width: 300px;
 }
 
-.flip img {
-  transform: scaleX(-1);
-}
+/* Index Sections */
 
-#footer button:hover {
-  background-color: #00fda3;
-  color: #313131;
+#overview h2 {
+	margin-top: 32px;
+	margin-bottom: 16px;
 }
-@font-face {
-  font-family: Fantasque;
-  font-weight: bold;
-  src: url(assets/fonts/fantasquesansmono-bold-webfont.woff);
+.overlap-fix {
+	margin-top: -1px;
 }
-@font-face {
-  font-family: Fantasque;
-  font-weight: normal;
-  src: url(assets/fonts/fantasquesansmono-regular-webfont.woff);
+#involved img {
+	max-width: 50%;
 }
-
-.nav {
-  background-color: #313131;
-  padding: 8px;
-}
-.navbar-brand img {
-  height: 50px;
-}
-.nav .container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.nav-link {
-  color: white;
-}
-.nav-link:hover {
-  color: #00fda3;
-}
-.current {
-  color: #00fda3;
-}
-#hero {
-  overflow: hidden;
-  position: relative;
-  min-height: 50vh;
-  margin-top: 60px;
-  padding-bottom: 32px;
-}
-
-.layer {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  z-index: -1;
-  position: fixed;
-}
-
-.layer-bg {
-  background-image: url(assets/images/parallax_0003_base.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-}
-
-.layer-01 {
-  background-image: url(assets/images/header_0008_stars.png);
-}
-
-.layer-02 {
-  background-image: url(assets/images/header_0002_planet-orange.png);
-}
-.layer-03 {
-  background-image: url(assets/images/header_0003_plenet-pink.png);
-}
-.layer-04 {
-  background-image: url(assets/images/header_0004_planet-green.png);
-}
-.layer-05 {
-  background-image: url(assets/images/header_0005_ship.png);
-  background-position: center top;
-}
-.layer-06 {
-  background-image: url(assets/images/header_0006_planet-front.png);
-}
-
-.layer-07 {
-  background-image: url(assets/images/header_0007_robot.png);
-}
-@media (max-width: 425px) {
-  .layer {
-    background-size: 250%;
-    background-position: bottom left;
-  }
-  .layer-bg {
-    background-size: cover;
-  }
-  .layer-01 {
-    size: 100%;
-    background-position: right;
-  }
-  .layer-06 {
-    background-position: bottom center;
-  }
-  .layer-05 {
-    background-position: top center;
-    background-size: 100%;
-  }
-}
-@media (min-device-width: 426px) and (max-width: 768px) {
-  .layer {
-    background-size: 150%;
-  }
-  .layer-bg,
-  .layer-01 {
-    background-size: cover;
-  }
-  .layer-06 {
-    background-position: bottom center;
-  }
-}
-
-#overview,
-#involved,
-#footer {
-  padding-top: 10vh;
+.flip-x {
+	transform: scaleX(-1);
 }
 #involved {
-  padding-bottom: 10vh;
+	padding-bottom: 10vh;
+}
+.quote {
+	color: #fead11;
+	font-size: 62px;
+	font-family: 'Nunito Sans', sans-serif;
+	line-height: 0;
+	font-style: ;
+}
+
+.top {
+	vertical-align: middle;
+}
+
+/* Navbar */
+.navbar {
+	background-color: #313131;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+}
+.navbar-toggler-icon {
+	background-image: none;
+	display: inline;
+}
+.navbar-toggler:focus {
+	box-shadow: none;
+	color: #00fda3;
+}
+.navbar-brand {
+	height: 40px;
+	width: 40px;
+	background-image: url(assets/images/logo_white_notext.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.navbar-brand:hover {
+	background-image: url(assets/images/logo_green.png);
+}
+.nav-link {
+	color: white;
+	margin-right: 24px;
+}
+.nav-link:hover {
+	color: #00fda3;
+}
+.active {
+	color: #00fda3;
+}
+
+/* Index Hero Banner */
+#hero {
+	overflow: hidden;
+	position: relative;
+	margin-top: -2px;
+	min-height: 50vh;
+	padding-bottom: 32px;
+}
+#hero button {
+	background-color: white;
+	color: #313131;
+	font-size: 28px;
+	font-weight: bolder;
+	padding: 8px 32px;
+	width: 100%;
+	margin-top: 16px;
+	height: auto;
+}
+#hero button:hover {
+	background-color: #ff045b;
+	color: white;
+}
+.layer {
+	background-repeat: no-repeat;
+	background-size: 250%;
+	background-position: bottom left;
+	z-index: -1;
+	position: fixed;
+}
+.layer-bg {
+	background-image: url(assets/images/parallax_0003_base.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+}
+.layer-stars {
+	background-image: url(assets/images/header_0008_stars.png);
+	size: 100%;
+	background-position: right;
+}
+.layer-planet-orange {
+	background-image: url(assets/images/header_0002_planet-orange.png);
+}
+.layer-planet-pink {
+	background-image: url(assets/images/header_0003_plenet-pink.png);
+}
+.layer-planet-green {
+	background-image: url(assets/images/header_0004_planet-green.png);
+}
+.layer-ship {
+	background-image: url(assets/images/header_0005_ship.png);
+	background-position: center top;
+	background-position: top center;
+	background-size: 100%;
+}
+.layer-front-planet {
+	background-image: url(assets/images/header_0006_planet-front.png);
+	background-position: bottom center;
+}
+.layer-robot {
+	background-image: url(assets/images/header_0007_robot.png);
+	background-size: contain;
+}
+
+/* Hero for all other pages */
+.repeated-hero {
+	background-image: url(assets/images/header_0008_stars.png), url(assets/images/parallax_0003_base.png);
+	background-size: 300%, cover;
+	background-position: left, center;
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, local;
+	color: white;
+	text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	padding: 5vh 0;
+}
+/* Schools page */
+.content-block {
+	margin-bottom: 5vh;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+#schools {
+	background-image: url(assets/images/contribute.png);
+	background-size: 20%;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+
+/* About page */
+#about img {
+	border-radius: 20px;
+	margin-bottom: 5vh;
+}
+.about-row {
+	justify-content: center;
+	text-align: center;
+	margin: 5vh 0;
+}
+.about-row:first-child {
+	margin-top: 0;
+}
+.about-row:last-child {
+	margin-bottom: 0;
+}
+
+/* Contact form */
+input,
+textarea {
+	border: solid 1px lightgrey;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	padding: 16px;
+	color: grey;
+}
+input:active,
+textarea:focus {
+	border-color: #114bfd;
+	color: grey;
+}
+form {
+	background-color: white;
+	padding: 16px;
+	border-radius: 4px;
+	border: none;
+}
+#submit {
+	background-color: rgb(17, 75, 253);
+	color: white;
+	padding: 16px;
+}
+label {
+	font-size: 19px;
+}
+form h2 {
+	margin: 16px 0 32px 0;
+	text-align: center;
+}
+#contact img {
+	max-width: 100%;
+}
+form h1 {
+	margin-top: 5vh;
+}
+
+/* Footer */
+#footer {
+	background-color: #313131;
+	padding-top: 5vh;
+	background-image: url(assets/images/header_0003_plenet-pink.png);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#footer a {
+	color: rgba(255, 255, 255, 0.541);
+	text-decoration: none;
+	cursor: pointer;
+}
+#footer a:hover {
+	color: #00fda3;
+}
+#footer p {
+	font-size: 14px;
+	color: white;
+	margin-top: 24px;
+}
+#footer button {
+	margin-top: 2vh;
+	background-color: rgba(255, 255, 255, 0.418);
+}
+#footer button:hover {
+	background-color: #00fda3;
+	color: #313131;
+}
+
+/* Media Sizes */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.layer {
+		background-size: 150%;
+	}
+	.layer-bg,
+	.layer-stars {
+		background-size: cover;
+	}
+	.layer-front-planet {
+		background-position: bottom center;
+	}
+}
+@media (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+	.repeated-hero {
+		background-image: url(assets/images/header_0008_stars.png), url(assets/images/parallax_0003_base.png);
+		background-size: contain;
+		background-position: top;
+		background-attachment: fixed, local;
+		padding: 10vh 0;
+		background-repeat: no-repeat, repeat-x;
+	}
+	.layer {
+		background-size: cover;
+	}
+	.about-row {
+		text-align: left;
+	}
+}
+@media (max-width: 767.98px) {
+	.web {
+		display: none;
+	}
+}
+@media (max-width: 992px) {
+	.layer-robot {
+		background-size: contain;
+	}
 }

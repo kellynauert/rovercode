@@ -10,7 +10,8 @@
 }
 /* General CSS prep */
 body {
-	font-family: Lato, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: Lato, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
 	font-size: 19px;
 }
 img {
@@ -109,6 +110,7 @@ button:hover {
 	position: fixed;
 	width: 100%;
 	z-index: 5;
+	height: 60px;
 }
 .navbar-toggler-icon {
 	background-image: none;
@@ -206,7 +208,8 @@ button:hover {
 
 /* Hero for all other pages */
 .repeated-hero {
-	background-image: url(assets/images/header_0008_stars.png), url(assets/images/parallax_0003_base.png);
+	background-image: url(assets/images/header_0008_stars.png),
+		url(assets/images/parallax_0003_base.png);
 	background-size: 300%, cover;
 	background-position: left, center;
 	background-repeat: repeat, no-repeat;
@@ -221,11 +224,9 @@ button:hover {
 	margin-bottom: 5vh;
 	background-color: rgba(255, 255, 255, 0.9);
 }
-#schools {
-	background-image: url(assets/images/contribute.png);
-	background-size: 20%;
-	background-position: bottom left;
-	background-repeat: no-repeat;
+
+#schools img {
+	border-radius: 20px;
 }
 
 /* About page */
@@ -244,7 +245,11 @@ button:hover {
 .about-row:last-child {
 	margin-bottom: 0;
 }
+/* Contact */
 
+#contact {
+	margin: 5vh 0;
+}
 /* Contact form */
 input,
 textarea {
@@ -329,12 +334,13 @@ form h1 {
 		background-position: bottom center;
 	}
 }
-@media (min-width: 768px) {
+@media (min-width: 768.1px) {
 	.mobile {
 		display: none;
 	}
 	.repeated-hero {
-		background-image: url(assets/images/header_0008_stars.png), url(assets/images/parallax_0003_base.png);
+		background-image: url(assets/images/header_0008_stars.png),
+			url(assets/images/parallax_0003_base.png);
 		background-size: contain;
 		background-position: top;
 		background-attachment: fixed, local;
@@ -348,7 +354,7 @@ form h1 {
 		text-align: left;
 	}
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 	.web {
 		display: none;
 	}

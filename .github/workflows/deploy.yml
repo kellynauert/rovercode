@@ -20,6 +20,7 @@ jobs:
       - name: Prettify links
         run: |
           cp index.html index-orig.html
+          find . -type f -name '*.html' -exec sed -i 's/index.html/\//' {} \;
           find . -type f -name '*.html' -exec sed -i 's/contact.html/contact/' {} \;
           find . -type f -name '*.html' -exec sed -i 's/about.html/about/' {} \;
           find . -type f -name '*.html' -exec sed -i 's/schools.html/schools/' {} \;

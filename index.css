@@ -112,6 +112,10 @@ button:hover {
 	z-index: 5;
 	height: 60px;
 }
+
+.navbar .container {
+	background-color: #313131;
+}
 .navbar-toggler-icon {
 	background-image: none;
 	display: inline;

@@ -1,57 +1,57 @@
 @font-face {
-	font-family: Fantasque;
-	font-weight: bold;
-	src: url(assets/fonts/fantasquesansmono-bold-webfont.woff);
+  font-family: Fantasque;
+  font-weight: bold;
+  src: url(assets/fonts/fantasquesansmono-bold-webfont.woff);
 }
 @font-face {
-	font-family: Fantasque;
-	font-weight: normal;
-	src: url(assets/fonts/fantasquesansmono-regular-webfont.woff);
+  font-family: Fantasque;
+  font-weight: normal;
+  src: url(assets/fonts/fantasquesansmono-regular-webfont.woff);
 }
 /* General CSS prep */
 body {
-	font-family: Lato, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-		sans-serif;
-	font-size: 19px;
+  font-family: Lato, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+  font-size: 19px;
 }
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 h1 {
-	font-size: 35px;
-	line-height: 45px;
-	color: #114bfd;
-	margin-bottom: 5vh;
-	font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  color: #114bfd;
+  margin-bottom: 5vh;
+  font-weight: 400;
 }
 h2 {
-	font-size: 28px;
-	line-height: 32px;
-	color: #ff045b;
-	font-family: Fantasque;
+  font-size: 28px;
+  line-height: 32px;
+  color: #ff045b;
+  font-family: Fantasque;
 }
 h3 {
-	color: white;
-	font-size: 19px;
-	margin-top: 2vh;
+  color: white;
+  font-size: 19px;
+  margin-top: 2vh;
 }
 h4 {
-	font-family: Fantasque;
-	font-size: 48px;
-	color: white;
+  font-family: Fantasque;
+  font-size: 48px;
+  color: white;
 }
 h5,
 .h5 {
-	font-style: italic;
-	font-size: 28px;
-	line-height: 32px;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 32px;
 }
 
 .space-container {
-	height: 150px;
+  height: 150px;
 }
 .page-section {
-	padding: 10vh 0;
+  padding: 10vh 0;
 }
 
 /* .banner {
@@ -60,311 +60,327 @@ h5,
 } */
 
 button {
-	background-color: #114bfd;
-	color: white;
-	border: none;
-	border-radius: 4px;
-	padding: 16px 32px;
+  background-color: #114bfd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 button:hover {
-	background-color: #313131;
-	color: white;
+  background-color: #313131;
+  color: white;
 }
 .logo {
-	max-width: 300px;
+  max-width: 300px;
 }
 
 /* Index Sections */
 
 #overview h2 {
-	margin-top: 32px;
-	margin-bottom: 16px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 .overlap-fix {
-	margin-top: -1px;
+  margin-top: -1px;
 }
 #involved img {
-	max-width: 50%;
+  max-width: 50%;
 }
 .flip-x {
-	transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 #involved {
-	padding-bottom: 10vh;
+  padding-bottom: 10vh;
 }
 .quote {
-	color: #fead11;
-	font-size: 62px;
-	font-family: 'Nunito Sans', sans-serif;
-	line-height: 0;
-	font-style: ;
+  color: #fead11;
+  font-size: 62px;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 0;
+  font-style: ;
 }
-
+.logo-container {
+  height: 120px;
+}
+.logo-container img {
+  height: 100%;
+}
 .top {
-	vertical-align: middle;
+  vertical-align: middle;
+}
+#partnerships a {
+  color: #114bfd;
+  font-weight: 600;
+}
+#partnerships a:hover {
+  color: #ff045b;
 }
 
 /* Navbar */
 .navbar {
-	background-color: #313131;
-	position: fixed;
-	width: 100%;
-	z-index: 5;
-	height: 60px;
+  background-color: #313131;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  height: 60px;
 }
 
 .navbar .container {
-	background-color: #313131;
+  background-color: #313131;
 }
 .navbar-toggler-icon {
-	background-image: none;
-	display: inline;
+  background-image: none;
+  display: inline;
 }
 .navbar-toggler:focus {
-	box-shadow: none;
-	color: #00fda3;
+  box-shadow: none;
+  color: #00fda3;
 }
 .navbar-brand {
-	height: 40px;
-	width: 40px;
-	background-image: url(assets/images/logo_white_notext.png);
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  background-image: url(assets/images/logo_white_notext.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .navbar-brand:hover {
-	background-image: url(assets/images/logo_green.png);
+  background-image: url(assets/images/logo_green.png);
 }
 .nav-link {
-	color: white;
-	margin-right: 24px;
+  color: white;
+  margin-right: 24px;
 }
 .nav-link:hover {
-	color: #00fda3;
+  color: #00fda3;
 }
 .active {
-	color: #00fda3;
+  color: #00fda3;
 }
 
 /* Index Hero Banner */
 #hero {
-	overflow: hidden;
-	position: relative;
-	margin-top: -2px;
-	min-height: 50vh;
-	padding-bottom: 32px;
+  overflow: hidden;
+  position: relative;
+  margin-top: -2px;
+  min-height: 50vh;
+  padding-bottom: 32px;
 }
 #hero button {
-	background-color: white;
-	color: #313131;
-	font-size: 28px;
-	font-weight: bolder;
-	padding: 8px 32px;
-	width: 100%;
-	margin-top: 16px;
-	height: auto;
+  background-color: white;
+  color: #313131;
+  font-size: 28px;
+  font-weight: bolder;
+  padding: 8px 32px;
+  width: 100%;
+  margin-top: 16px;
+  height: auto;
 }
 #hero button:hover {
-	background-color: #ff045b;
-	color: white;
+  background-color: #ff045b;
+  color: white;
 }
 .layer {
-	background-repeat: no-repeat;
-	background-size: 250%;
-	background-position: bottom left;
-	z-index: -1;
-	position: fixed;
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position: bottom left;
+  z-index: -1;
+  position: fixed;
 }
 .layer-bg {
-	background-image: url(assets/images/parallax_0003_base.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: repeat;
+  background-image: url(assets/images/parallax_0003_base.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 .layer-stars {
-	background-image: url(assets/images/header_0008_stars.png);
-	size: 100%;
-	background-position: right;
+  background-image: url(assets/images/header_0008_stars.png);
+  size: 100%;
+  background-position: right;
 }
 .layer-planet-orange {
-	background-image: url(assets/images/header_0002_planet-orange.png);
+  background-image: url(assets/images/header_0002_planet-orange.png);
 }
 .layer-planet-pink {
-	background-image: url(assets/images/header_0003_plenet-pink.png);
+  background-image: url(assets/images/header_0003_plenet-pink.png);
 }
 .layer-planet-green {
-	background-image: url(assets/images/header_0004_planet-green.png);
+  background-image: url(assets/images/header_0004_planet-green.png);
 }
 .layer-ship {
-	background-image: url(assets/images/header_0005_ship.png);
-	background-position: center top;
-	background-position: top center;
-	background-size: 100%;
+  background-image: url(assets/images/header_0005_ship.png);
+  background-position: center top;
+  background-position: top center;
+  background-size: 100%;
 }
 .layer-front-planet {
-	background-image: url(assets/images/header_0006_planet-front.png);
-	background-position: bottom center;
+  background-image: url(assets/images/header_0006_planet-front.png);
+  background-position: bottom center;
 }
 .layer-robot {
-	background-image: url(assets/images/header_0007_robot.png);
-	background-size: contain;
+  background-image: url(assets/images/header_0007_robot.png);
+  background-size: contain;
 }
 
 /* Hero for all other pages */
 .repeated-hero {
-	background-image: url(assets/images/header_0008_stars.png),
-		url(assets/images/parallax_0003_base.png);
-	background-size: 300%, cover;
-	background-position: left, center;
-	background-repeat: repeat, no-repeat;
-	background-attachment: fixed, local;
-	color: white;
-	text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-	text-align: center;
-	padding: 5vh 0;
+  background-image: url(assets/images/header_0008_stars.png),
+    url(assets/images/parallax_0003_base.png);
+  background-size: 300%, cover;
+  background-position: left, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, local;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 5vh 0;
 }
 /* Schools page */
 .content-block {
-	margin-bottom: 5vh;
-	background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 5vh;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 #schools img {
-	border-radius: 20px;
+  border-radius: 20px;
 }
 
 /* About page */
 #about img {
-	border-radius: 20px;
-	margin-bottom: 5vh;
+  border-radius: 20px;
+  margin-bottom: 5vh;
 }
 .about-row {
-	justify-content: center;
-	text-align: center;
-	margin: 5vh 0;
+  justify-content: center;
+  text-align: center;
+  margin: 5vh 0;
 }
 .about-row:first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 .about-row:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
-/* Contact */
 
+/* Contact Page */
 #contact {
-	margin: 5vh 0;
+  margin: 5vh 0;
 }
+
 /* Contact form */
 input,
 textarea {
-	border: solid 1px lightgrey;
-	border-radius: 4px;
-	margin-bottom: 16px;
-	padding: 16px;
-	color: grey;
+  border: solid 1px lightgrey;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding: 16px;
+  color: grey;
 }
 input:active,
 textarea:focus {
-	border-color: #114bfd;
-	color: grey;
+  border-color: #114bfd;
+  color: grey;
 }
 form {
-	background-color: white;
-	padding: 16px;
-	border-radius: 4px;
-	border: none;
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+  border: none;
 }
 #submit {
-	background-color: rgb(17, 75, 253);
-	color: white;
-	padding: 16px;
+  background-color: rgb(17, 75, 253);
+  color: white;
+  padding: 16px;
 }
 label {
-	font-size: 19px;
+  font-size: 19px;
 }
 form h2 {
-	margin: 16px 0 32px 0;
-	text-align: center;
+  margin: 16px 0 32px 0;
+  text-align: center;
 }
 #contact img {
-	max-width: 100%;
+  max-width: 100%;
 }
 form h1 {
-	margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 /* Footer */
 #footer {
-	background-color: #313131;
-	padding-top: 5vh;
-	background-image: url(assets/images/header_0003_plenet-pink.png);
+  background-color: #313131;
+  padding-top: 5vh;
+  background-image: url(assets/images/header_0003_plenet-pink.png);
 
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 #footer a {
-	color: rgba(255, 255, 255, 0.541);
-	text-decoration: none;
-	cursor: pointer;
+  color: rgba(255, 255, 255, 0.541);
+  text-decoration: none;
+  cursor: pointer;
 }
 #footer a:hover {
-	color: #00fda3;
+  color: #00fda3;
 }
 #footer p {
-	font-size: 14px;
-	color: white;
-	margin-top: 24px;
+  font-size: 14px;
+  color: white;
+  margin-top: 24px;
 }
 #footer button {
-	margin-top: 2vh;
-	background-color: rgba(255, 255, 255, 0.418);
+  margin-top: 2vh;
+  background-color: rgba(255, 255, 255, 0.418);
 }
 #footer button:hover {
-	background-color: #00fda3;
-	color: #313131;
+  background-color: #00fda3;
+  color: #313131;
 }
 
 /* Media Sizes */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	.layer {
-		background-size: 150%;
-	}
-	.layer-bg,
-	.layer-stars {
-		background-size: cover;
-	}
-	.layer-front-planet {
-		background-position: bottom center;
-	}
+  .layer {
+    background-size: 150%;
+  }
+  .layer-bg,
+  .layer-stars {
+    background-size: cover;
+  }
+  .layer-front-planet {
+    background-position: bottom center;
+  }
 }
 @media (min-width: 768.1px) {
-	.mobile {
-		display: none;
-	}
-	.repeated-hero {
-		background-image: url(assets/images/header_0008_stars.png),
-			url(assets/images/parallax_0003_base.png);
-		background-size: contain;
-		background-position: top;
-		background-attachment: fixed, local;
-		padding: 10vh 0;
-		background-repeat: no-repeat, repeat-x;
-	}
-	.layer {
-		background-size: cover;
-	}
-	.about-row {
-		text-align: left;
-	}
+  .mobile {
+    display: none;
+  }
+  .repeated-hero {
+    background-image: url(assets/images/header_0008_stars.png),
+      url(assets/images/parallax_0003_base.png);
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed, local;
+    padding: 10vh 0;
+    background-repeat: no-repeat, repeat-x;
+  }
+  .layer {
+    background-size: cover;
+  }
+  .about-row {
+    text-align: left;
+  }
 }
 @media (max-width: 768px) {
-	.web {
-		display: none;
-	}
+  .web {
+    display: none;
+  }
+  .mobile-mt {
+    margin-top: 48px;
+  }
 }
 @media (max-width: 992px) {
-	.layer-robot {
-		background-size: contain;
-	}
+  .layer-robot {
+    background-size: contain;
+  }
 }
